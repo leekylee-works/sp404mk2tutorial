@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowLeft, Info, Zap, Lightbulb, ToggleLeft, BookOpen, Play, Music, Settings, Command, AlertTriangle, Target, Workflow, Download, FileText, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
-import { ContentData, mfxEffects } from '../data/database';
+import { ContentData, mfxEffects, hotspots, contentDB } from '../data/database';
 import { GuideModule, guideModules, GuideModuleId } from '../types/guide';
 import { GuideModuleCard } from './GuideModuleCard';
 import { BusEffectsGuide } from './BusEffectsGuide';
@@ -1507,7 +1507,7 @@ const TipsContent = () => (
       <span className="text-[#bbb]"> 這是 SP 的核心！將 Pattern 錄成 Audio Loop，可���釋放發音數並添加效果</span>
     </li>
     <li className="bg-[#232323] border border-[#333] rounded p-2">
-      <strong className="text-blue-400">Chop 功能：</strong>
+      <strong className="text-blue-400">Chop ���能：</strong>
       <span className="text-[#bbb]"> 非常強大，可用於製作 Hip Hop 鼓組，自動將 Sample 切片至 16 個 Pad</span>
     </li>
     <li className="bg-[#232323] border border-[#333] rounded p-2">
@@ -1531,9 +1531,6 @@ const TipsContent = () => (
 const IndexContent = ({ onHotspotSelect }: { onHotspotSelect?: (id: string) => void }) => {
   const [expandedCategory, setExpandedCategory] = React.useState<string | null>(null);
   const [expandedHotspot, setExpandedHotspot] = React.useState<string | null>(null);
-  
-  // 從 database 導入 hotspots 和 contentDB
-  const { hotspots, contentDB } = require('../data/database');
   
   // 按分類分組
   const categorizedHotspots = hotspots.reduce((acc: Record<string, typeof hotspots>, hotspot: typeof hotspots[0]) => {
@@ -2221,9 +2218,6 @@ interface HotspotDetailModalProps {
 }
 
 const HotspotDetailModal: React.FC<HotspotDetailModalProps> = ({ hotspotId, onClose }) => {
-  // 從 database 導入 hotspots 和 contentDB
-  const { hotspots, contentDB } = require('../data/database');
-  
   // 找到對應的 hotspot 和 content
   const hotspot = hotspots.find((h: any) => h.id === hotspotId);
   const content = contentDB[hotspotId];
