@@ -399,7 +399,7 @@ export const contentDB: Record<string, ContentData> = {
   },
   "rec": { 
     def: "REC (錄音)", 
-    detail: "啟動錄音功能，可錄製外部音源（LINE IN / MIC）或內部 RESAMPLE。支援 Pattern 錄音（記錄演奏��態）和 Sample 錄音（錄製音頻）。(參見指南 p.14)", 
+    detail: "啟動錄音功能，可錄製外部音源（LINE IN / MIC）或內部 RESAMPLE。支援 Pattern 錄音（記錄演奏狀態）和 Sample 錄音（錄製音頻）。(參見指南 p.14)", 
     shift: ["SHIFT + REC: TR-REC (步進式錄音 / Step Sequencer)"], 
     usage: [
       "按 REC 啟動 Sample 錄音，錄製外部音源或內部重採樣",
@@ -648,8 +648,8 @@ export const contentDB: Record<string, ContentData> = {
     tip: "💡 Tip: SUB PAD 模式配合 Chromatic 可以把 16 個 Pad 變成鍵盤，演奏旋律！也可以設為 Mute Groups 模擬真實鼓組（Open Hi-hat 和 Closed Hi-hat 互斥）。"
   },
   "p1": { def: "打擊墊 1", detail: "可分配 Sample、調整效果、錄製動態。支援力度感應（Velocity Sensitive）。", shift: ["SHIFT + PAD 1: Fixed Velocity（固定力度模式）"], usage: ["按 Pad 觸發 Sample", "按住 Pad 可調整力度（如果啟用 Velocity）", "配合 SHIFT 執行副功能"], tip: "💡 Tip: 16 個 Pad 是 SP-404MKII 的核心！每個 Pad 都可獨立設定效果、音高、循環等參數。建議把最常用的 Drum 放在 Pad 1-8，旋律放在 Pad 9-16。" },
-  "p2": { def: "打擊墊 2", detail: "同 Pad 1。", shift: ["SHIFT + PAD 2: 16 Velocity（16 段力度模���）"], usage: ["同上"], tip: "💡 Tip: 同上" },
-  "p3": { def: "打擊墊 3", detail: "同 Pad 1。", shift: ["SHIFT + PAD 3: Cue 設��"], usage: ["同上"], tip: "💡 Tip: 同上" },
+  "p2": { def: "打擊墊 2", detail: "同 Pad 1。", shift: ["SHIFT + PAD 2: 16 Velocity（16 段力度模式）"], usage: ["同上"], tip: "💡 Tip: 同上" },
+  "p3": { def: "打擊墊 3", detail: "同 Pad 1。", shift: ["SHIFT + PAD 3: Cue 設定"], usage: ["同上"], tip: "💡 Tip: 同上" },
   "p4": { def: "打擊墊 4", detail: "同 Pad 1。", shift: ["SHIFT + PAD 4: Chromatic Mode（半音演奏模式）"], usage: ["同上"], tip: "💡 Tip: SHIFT + PAD 4 開啟 Chromatic Mode，16 個 Pad 變成鍵盤，可演奏旋律！" },
   "p5": { def: "打擊墊 5", detail: "同 Pad 1。", shift: ["SHIFT + PAD 5: Exchange（交換 Pad）"], usage: ["同上"], tip: "💡 Tip: 同上" },
   "p6": { def: "打擊墊 6", detail: "同 Pad 1。", shift: ["SHIFT + PAD 6: Init Param（重置參數）"], usage: ["同上"], tip: "💡 Tip: 同上" },
