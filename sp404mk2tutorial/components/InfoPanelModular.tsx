@@ -439,7 +439,7 @@ const ControlsContent = ({ onHotspotSelect }: { onHotspotSelect?: (id: string) =
         <ul className="list-disc pl-5 mb-3 text-sm space-y-1.5">
           <li><ClickableButton id="roll">ROLL</ClickableButton>: 滾奏效果（Hi-hat rolls）</li>
           <li><ClickableButton id="loop">LOOP</ClickableButton>: 循環播放</li>
-          <li><ClickableButton id="rev">REVERSE</ClickableButton>: 倒��播放 / Pad Mute</li>
+          <li><ClickableButton id="rev">REVERSE</ClickableButton>: 倒轉播放 / Pad Mute</li>
           <li><ClickableButton id="gate">GATE</ClickableButton>: 門限播放模式（按住播放）</li>
           <li><ClickableButton id="hold">HOLD</ClickableButton>: 鎖定播放（無限延音）</li>
           <li><ClickableButton id="bpm">BPM SYNC</ClickableButton>: 速度同步至Project BPM</li>
@@ -845,7 +845,7 @@ const SamplingContent = () => (
         </div>
         <div className="bg-[#232323] border-l-2 border-cyan-600 p-3 rounded-r">
           <div className="text-cyan-400 font-semibold text-sm mb-1">步驟 5：持續匯入</div>
-          <div className="text-[#bbb] text-sm">在最新更新中（例如 1.14 版本），完成一次載入後，系統會停留在匯入選單，您可以繼��試聽和���入其他音效</div>
+          <div className="text-[#bbb] text-sm">在最新更新中（例如 1.14 版本），完成一次載入後，系統會停留在匯入選單，您可以繼續試聽和匯入其他音效</div>
         </div>
       </div>
     </div>
@@ -942,7 +942,7 @@ const SamplingContent = () => (
           <h5 className="text-purple-400 font-semibold text-sm mb-2">檢查循環（Loop Check）</h5>
           <ul className="space-y-1.5 text-sm text-[#bbb]">
             <li>• 若 Loop 功能已啟用，進入終點（End Point），按住 <strong className="text-purple-400">SHIFT</strong> 並放大</li>
-            <li>• 按下 <strong className="text-purple-400">Roll</strong>，系統會從終點前幾秒開始播放並循環回到起點，��您檢查循環是否完美</li>
+            <li>• 按下 <strong className="text-purple-400">Roll</strong>，系統會從終點前幾秒開始播放並循環回到起點，讓您檢查循環是否完美</li>
           </ul>
         </div>
 
@@ -1090,7 +1090,7 @@ const SamplingContent = () => (
 
         <div className="bg-[#232323] border border-[#333] rounded-lg p-3">
           <h5 className="text-green-400 font-semibold text-sm mb-2">3. 調整整個 Bank 的音高</h5>
-          <p className="text-[#bbb] text-sm mb-2">如果您想同時調整整個 Mute Group 或 Bank 的��高：</p>
+          <p className="text-[#bbb] text-sm mb-2">如果您想同時調整整個 Mute Group 或 Bank 的音高：</p>
           <ul className="space-y-1.5 text-sm text-[#bbb]">
             <li>• 在 <strong className="text-green-400">Pitch/Speed</strong> 模式下</li>
             <li>• 按住 <strong className="text-green-400">COPY</strong>，同時調整音高，這樣就會影響該 Mute Group 中的所有取樣</li>
@@ -1106,7 +1106,7 @@ const SamplingContent = () => (
         <span>🎬</span> 類比理解
       </h4>
       <p className="text-purple-200/90 text-sm leading-relaxed">
-        SP-404 MK2 的取樣工作流程就像是在製作一部電影：首先，您需要準備好攝影器材和劇本（設定 BPM 和 SD 卡）。接著，您或是匯入事先拍好的片段（One-shots），或是直接在現場錄製一段長鏡頭（長取樣）。錄製後，您進入剪輯室（Start/End 編輯），精確定義鏡頭的起點和終點（裁切）。然後，您根據電影的節奏（BPM）來校準或加速/放慢鏡頭（BPM 偵測與同步）。最後，您可以將長鏡頭分割成多個短小的場景（Chopping/Slicing），���確保它們在播��時不會互相衝突或重疊（Mute Groups）。
+        SP-404 MK2 的取樣工作流程就像是在製作一部電影：首先，您需要準備好攝影器材和劇本（設定 BPM 和 SD 卡）。接著，您或是匯入事先拍好的片段（One-shots），或是直接在現場錄製一段長鏡頭（長取樣）。錄製後，您進入剪輯室（Start/End 編輯），精確定義鏡頭的起點和終點（裁切）。然後，您根據電影的節奏（BPM）來校準或加速/放慢鏡頭（BPM 偵測與同步）。最後，您可以將長鏡頭分割成多個短小的場景（Chopping/Slicing），並確保它們在播放時不會互相衝突或重疊（Mute Groups）。
       </p>
     </div>
   </div>
@@ -1360,7 +1360,7 @@ const PatternContent = () => (
             <span>🔊</span> 聲音調整
           </h4>
           <p className="text-yellow-200/90 text-sm">
-            如果樂段中的取樣音量太大或太小，您必須先退出 Pattern Select 模式，回到取樣播放模式，選擇該取樣的 Pad，進入 <strong className="text-yellow-400">Pitch/Speed</strong> ��面，使用 <strong className="text-yellow-400">Control Knob 3 (Volume)</strong> 調整音量。
+            如果樂段中的取樣音量太大或太小，您必須先退出 Pattern Select 模式，回到取樣播放模式，選擇該取樣的 Pad，進入 <strong className="text-yellow-400">Pitch/Speed</strong> 頁面，使用 <strong className="text-yellow-400">Control Knob 3 (Volume)</strong> 調整音量。
           </p>
         </div>
       </div>
@@ -1386,7 +1386,7 @@ const PatternContent = () => (
             </div>
             
             <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded p-3">
-              <div className="text-cyan-400 font-semibold text-sm mb-2">選擇性複��</div>
+              <div className="text-cyan-400 font-semibold text-sm mb-2">選擇性複製</div>
               <p className="text-[#bbb] text-sm">
                 在 Copy 過程中，可以點擊 <strong className="text-cyan-400">Remain</strong> 選項，然後選擇只複製樂段中的<strong>特定取樣</strong>到新的 Pad 上（例如只複製 snare，不複製 kick）。
               </p>
@@ -1460,7 +1460,7 @@ const PatternContent = () => (
           <ul className="space-y-1.5 text-sm text-[#bbb]">
             <li>• 按下 <strong className="text-purple-400">Subpad</strong> 即可開始播放鏈條</li>
             <li>• 使用編碼器旋鈕來滾動鏈條中的樂段</li>
-            <li>• 按下 <strong className="text-purple-400">Delete</strong> 來移除��定的樂段</li>
+            <li>• 按下 <strong className="text-purple-400">Delete</strong> 來移除指定的樂段</li>
           </ul>
         </div>
         
@@ -1482,7 +1482,7 @@ const PatternContent = () => (
         <span>🎬</span> 類比理解
       </h4>
       <p className="text-purple-200/90 text-sm leading-relaxed">
-        SP-404 MK2 的編曲器邏輯就像是電影導演的工作檯：您首先定義好拍攝的規格（設定 BPM、長度和量化），然後可以選擇實時表演（實時錄音）或精細排程（TR-Rec）來記錄場景（樂段）。一旦有了不同的場景（例如 Intro、Verse），您就可以透過樂段��接（Pattern Chaining）功能，將這些場景組合成一部完整的電影（曲目）結構。
+        SP-404 MK2 的編曲器邏輯就像是電影導演的工作檯：您首先定義好拍攝的規格（設定 BPM、長度和量化），然後可以選擇實時表演（實時錄音）或精細排程（TR-Rec）來記錄場景（樂段）。一旦有了不同的場景（例如 Intro、Verse），您就可以透過樂��串接（Pattern Chaining）功能，將這些場景組合成一部完整的電影（曲目）結構。
       </p>
     </div>
   </div>
@@ -1504,7 +1504,7 @@ const TipsContent = () => (
     </li>
     <li className="bg-[#232323] border border-[#333] rounded p-2">
       <strong className="text-blue-400">Resample 工作流：</strong>
-      <span className="text-[#bbb]"> 這是 SP 的核心！將 Pattern 錄成 Audio Loop，可���釋放發音數並添加效果</span>
+      <span className="text-[#bbb]"> 這是 SP 的核心！將 Pattern 錄成 Audio Loop，可以釋放發音數並添加效果</span>
     </li>
     <li className="bg-[#232323] border border-[#333] rounded p-2">
       <strong className="text-blue-400">Chop 功能：</strong>
@@ -1531,8 +1531,6 @@ const TipsContent = () => (
 const IndexContent = ({ onHotspotSelect }: { onHotspotSelect?: (id: string) => void }) => {
   const [expandedCategory, setExpandedCategory] = React.useState<string | null>(null);
   const [expandedHotspot, setExpandedHotspot] = React.useState<string | null>(null);
-  
-  // 從 database 導入 hotspots 和 contentDB
   
   // 按分類分組
   const categorizedHotspots = hotspots.reduce((acc: Record<string, typeof hotspots>, hotspot: typeof hotspots[0]) => {
@@ -1750,7 +1748,7 @@ const IndexContent = ({ onHotspotSelect }: { onHotspotSelect?: (id: string) => v
       <div className="bg-yellow-900/20 border border-yellow-700/30 rounded-lg p-3 mt-5 text-sm">
         <strong className="text-yellow-400">💡 使用提示</strong>
         <ul className="mt-2 space-y-1 text-yellow-200/80">
-          <li>• 點擊任何分類名稱即可展開查看該分類下的所���按鈕</li>
+          <li>• 點擊任何分類名稱即可展開查看該分類下的所有按鈕</li>
           <li>• 再點擊按鈕名稱即可展開查看詳細說明、SHIFT 組合鍵、使用技巧</li>
           <li>• 打擊墊 (Pads) 有 16 個，支援力度感應</li>
           <li>• 也可以直接點擊左側機器圖片上的熱點區域</li>
@@ -2220,8 +2218,6 @@ interface HotspotDetailModalProps {
 }
 
 const HotspotDetailModal: React.FC<HotspotDetailModalProps> = ({ hotspotId, onClose }) => {
-  // 從 database 導入 hotspots 和 contentDB
-  
   // 找到對應的 hotspot 和 content
   const hotspot = hotspots.find((h: any) => h.id === hotspotId);
   const content = contentDB[hotspotId];
