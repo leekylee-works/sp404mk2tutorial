@@ -1482,7 +1482,7 @@ const PatternContent = () => (
         <span>🎬</span> 類比理解
       </h4>
       <p className="text-purple-200/90 text-sm leading-relaxed">
-        SP-404 MK2 的編曲器邏輯就像是電影導演的工作檯：您首先定義好拍攝的規格（設定 BPM、長度和量化），然後可以選擇實時表演（實時錄音）或精細排程（TR-Rec）來記錄場景（樂段）。一旦有了不同的場景（例如 Intro、Verse），您就可以透過樂��串接（Pattern Chaining）功能，將這些場景組合成一部完整的電影（曲目）結構。
+        SP-404 MK2 的編曲器邏輯就像是電影導演的工作檯：您首先定義好拍攝的規格（設定 BPM、長度和量化），然後可以選擇實時表演（實時錄音）或精細排程（TR-Rec）來記錄場景（樂段）。一旦有了不同的場景（例如 Intro、Verse），您就可以透過樂段串接（Pattern Chaining）功能，將這些場景組合成一部完整的電影（曲目）結構。
       </p>
     </div>
   </div>
