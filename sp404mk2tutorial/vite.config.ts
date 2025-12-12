@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: '/',
@@ -11,12 +10,13 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-        },
-      },
-    },
+          'react-vendor': ['react', 'react-dom']
+        }
+      }
+    }
   },
   server: {
-    port: 3000,
-  },
+    port: 5173,
+    open: true
+  }
 });
