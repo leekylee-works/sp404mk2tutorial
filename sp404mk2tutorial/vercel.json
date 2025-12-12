@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "build",
   "framework": "vite",
   "rewrites": [
     {
@@ -9,6 +9,6 @@
     }
   ],
   "env": {
-    "FORCE_REBUILD": "2024-12-12"
+    "FORCE_REBUILD": "2024-12-12-fix-output"
   }
 }
