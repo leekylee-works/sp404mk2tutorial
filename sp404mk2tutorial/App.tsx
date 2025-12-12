@@ -8,7 +8,7 @@ import { hotspots, contentDB } from './data/database';
 // 🔧 DEBUG: Force rebuild at 2024-12-12 23:45
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [mode, setMode] = useState<'guide' | 'detail'>('guide');
+  const [mode, setMode] = useState<'guide' | 'detail'>('detail');
   const [modalHotspotId, setModalHotspotId] = useState<string | null>(null);
 
   const handleHotspotClick = (id: string) => {
