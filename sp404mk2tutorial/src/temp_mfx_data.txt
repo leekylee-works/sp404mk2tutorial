@@ -1,0 +1,67 @@
+完整的 42 種 MFX 效果（按官方順序，帶調整建議和曲風）
+
+// === Lo-Fi & Vintage (#1-5) ===
+{ num: 1, name: "VINYL SIM", cat: "Lo-Fi", desc: "模擬黑膠唱片質感，含雜訊與頻率衰減", tips: "調高 Crackle 增加雜訊，Age 控制老化程度", genre: "Lo-Fi Hip Hop, Jazz, Soul" },
+{ num: 2, name: "CASSETTE", cat: "Lo-Fi", desc: "卡帶機老化音色，Wow & Flutter 效果", tips: "增加 Wow 製造音高漂移，Saturation 加溫暖感", genre: "Synthwave, Vaporwave, Chillwave" },
+{ num: 3, name: "LO-FI", cat: "Lo-Fi", desc: "降低位元深度與取樣率", tips: "Bit Depth 降至 8-10 bit，Sample Rate 減半", genre: "Lo-Fi Hip Hop, Chiptune" },
+{ num: 4, name: "RADIO", cat: "Lo-Fi", desc: "收音機質感", tips: "Frequency 調至 AM 範圍，加入雜訊", genre: "Lo-Fi, Vaporwave, Retro" },
+{ num: 5, name: "VINYL FLICK", cat: "Lo-Fi", desc: "唱針刮擦模擬", tips: "速度配合節奏，適合做 DJ Scratch 音效", genre: "Hip Hop, Turntablism, Breaks" },
+
+// === Dynamics (#6-9) ===
+{ num: 6, name: "COMP", cat: "Dynamics", desc: "壓縮器，控制動態範圍", tips: "Ratio 3:1 起步，Attack 慢讓打擊感保留", genre: "所有曲風（混音必備）" },
+{ num: 7, name: "SIDECHAIN", cat: "Dynamics", desc: "側鏈壓縮，製作 Pumping 效果", tips: "Threshold 調至 -20dB，Release 配合節奏", genre: "EDM, House, Future Bass" },
+{ num: 8, name: "LIMITER", cat: "Dynamics", desc: "限幅器", tips: "Threshold -1dB，避免削波，用於 Master", genre: "所有曲風（Mastering）" },
+{ num: 9, name: "GATE", cat: "Dynamics", desc: "噪音門", tips: "Threshold 設定在底噪之上，Release 快速", genre: "Techno, Minimal, Dubstep" },
+
+// === Space & Reverb (#10-11) ===
+{ num: 10, name: "REVERB", cat: "Space", desc: "空間混響", tips: "Time 1-2 秒適中，Pre-Delay 20-40ms 增加深度", genre: "所有曲風" },
+{ num: 11, name: "DOUBLER", cat: "Space", desc: "加倍效果", tips: "Delay 10-30ms，微調 Pitch 製造厚度", genre: "Pop, R&B, Vocals" },
+
+// === Time & Delay (#12-16) ===
+{ num: 12, name: "DELAY", cat: "Time", desc: "延遲回音", tips: "1/4 或 1/8 音符同步 BPM，Feedback 40-60%", genre: "Dub, Reggae, Ambient, Techno" },
+{ num: 13, name: "TAPE STOP", cat: "Time", desc: "磁帶停止效果", tips: "Time 設 1-2 秒，用於歌曲過場或 Drop 前", genre: "所有曲風（過場效果）" },
+{ num: 14, name: "REPEAT", cat: "Time", desc: "循環重複", tips: "1/16 或 1/32 製造 Stutter，手動觸發最佳", genre: "Trap, Dubstep, Bass Music" },
+{ num: 15, name: "BEAT REPEAT", cat: "Time", desc: "節拍重複效果", tips: "1/16 同步，Repeat 2-4 次，用於 Fill", genre: "Trap, Hip Hop, Glitch Hop" },
+{ num: 16, name: "SPECTRAL DELAY", cat: "Time", desc: "頻譜延遲", tips: "不同頻段設不同延遲時間，製造空間感", genre: "Ambient, Dub Techno, Experimental" },
+
+// === Modulation (#17-25) ===
+{ num: 17, name: "CHORUS", cat: "Modulation", desc: "合唱效果", tips: "Rate 慢速（0.5-2Hz），Depth 適中避免過於飄", genre: "Pop, R&B, Synthpop" },
+{ num: 18, name: "FLANGER", cat: "Modulation", desc: "鑲邊效果", tips: "Feedback 提高製造金屬感，Rate 配合節奏", genre: "Psychedelic Rock, Techno" },
+{ num: 19, name: "PHASER", cat: "Modulation", desc: "相位效果", tips: "Stages 4-6，Resonance 適中避免太尖銳", genre: "Funk, Disco, Psytrance" },
+{ num: 20, name: "RING MOD", cat: "Modulation", desc: "環形調變，金屬音色", tips: "Frequency 調至音階音高，Mix 30% 以下", genre: "Industrial, Experimental, Sci-Fi 音效" },
+{ num: 21, name: "TREMOLO", cat: "Modulation", desc: "震音效果", tips: "Rate 同步 BPM（1/4 或 1/8），Depth 70%", genre: "Surf Rock, Dub, Ambient" },
+{ num: 22, name: "PAN", cat: "Modulation", desc: "自動聲像移動", tips: "Rate 慢速製造寬廣感，快速製造迷幻感", genre: "Trance, Ambient, Experimental" },
+{ num: 23, name: "AUTO PAN", cat: "Modulation", desc: "節奏性聲像移動", tips: "同步 1/16 音符製造律動感，Depth 80%", genre: "Techno, Drum & Bass, Breakbeat" },
+{ num: 24, name: "ROTARY", cat: "Modulation", desc: "旋轉喇叭模擬", tips: "Slow/Fast 切換製造經典 Hammond 風格", genre: "Jazz, Gospel, Psychedelic Rock" },
+{ num: 25, name: "FREQUENCY SHIFTER", cat: "Modulation", desc: "頻率偏移", tips: "±50-200Hz 製造不和諧金屬音色", genre: "Industrial, Experimental, Sci-Fi" },
+
+// === Filter (#26-28) ===
+{ num: 26, name: "WAH", cat: "Filter", desc: "哇哇踏板效果", tips: "Resonance 提高，Frequency 範圍 200Hz-2kHz", genre: "Funk, Disco, Acid House" },
+{ num: 27, name: "AUTO FILTER", cat: "Filter", desc: "自動濾波器", tips: "同步 1/8 或 1/4，Resonance 70% 製造律動", genre: "House, Techno, Electro" },
+{ num: 28, name: "FILTER BANK", cat: "Filter", desc: "多頻段濾波器組", tips: "分段調整製造 Vowel 母音效果", genre: "Techno, Electro, Experimental" },
+
+// === Drive & Distortion (#29-31) ===
+{ num: 29, name: "DISTORTION", cat: "Drive", desc: "失真破音", tips: "Drive 適中，配合 Filter 削減高頻噪音", genre: "Rock, Industrial, Drum & Bass" },
+{ num: 30, name: "OVERDRIVE", cat: "Drive", desc: "溫和破音", tips: "Drive 40-60%，保留動態，適合鼓組", genre: "Blues, Lo-Fi, Boom Bap" },
+{ num: 31, name: "FUZZ", cat: "Drive", desc: "重度破音", tips: "全開製造極端失真，Mix 50% 混合乾聲", genre: "Psych Rock, Stoner Rock, Noise" },
+
+// === Tone & EQ (#32-33) ===
+{ num: 32, name: "EQ", cat: "Tone", desc: "參數等化器", tips: "Low Shelf 提升溫暖，High Shelf 削減刺耳", genre: "所有曲風（調音必備）" },
+{ num: 33, name: "GRAPHIC EQ", cat: "Tone", desc: "圖形等化器", tips: "中頻略降製造 Smiley EQ（笑臉曲線）", genre: "EDM, Pop, Dance" },
+
+// === Pitch (#34-35) ===
+{ num: 34, name: "PITCH SHIFTER", cat: "Pitch", desc: "音高變換", tips: "+12 或 -12 半音疊加和聲，Mix 30-50%", genre: "Pop, EDM, Trap" },
+{ num: 35, name: "HARMONIZER", cat: "Pitch", desc: "和聲產生器", tips: "+7 或 +5 半音疊加和弦，Mix 40%", genre: "Trance, Psytrance, Melodic House" },
+
+// === Voice & Special (#36) ===
+{ num: 36, name: "VOCODER", cat: "Voice", desc: "機器人聲效", tips: "用合成器 Pad 當 Carrier，人聲當 Modulator", genre: "Electro, Daft Punk 風格, Future Funk" },
+
+// === Glitch & Experimental (#37-41) ===
+{ num: 37, name: "SCATTER", cat: "Glitch", desc: "隨機切片與重組", tips: "Intensity 50-70%，Length 短促製造碎片感", genre: "Glitch Hop, IDM, Footwork" },
+{ num: 38, name: "STUTTER", cat: "Glitch", desc: "結巴效果", tips: "1/32 或 1/64，手動觸發製造斷續感", genre: "Glitch Hop, Bass Music, IDM" },
+{ num: 39, name: "GRAIN SHIFTER", cat: "Glitch", desc: "顆粒合成效果", tips: "Grain Size 小製造顆粒感，Pitch 隨機化", genre: "Ambient, Glitch, Experimental" },
+{ num: 40, name: "GRANULAR", cat: "Glitch", desc: "顆粒延遲", tips: "Grain Density 高，Feedback 適中製造雲霧感", genre: "Ambient, Glitch, Soundscape" },
+{ num: 41, name: "DECIMATOR", cat: "Lo-Fi", desc: "破壞性降頻效果", tips: "Sample Rate 降至極低，製造極端毀損感", genre: "Glitch, Industrial, Harsh Noise" },
+
+// === DJ & Performance (#42) ===
+{ num: 42, name: "DJFX LOOPER", cat: "DJ/Performance", desc: "DJ 風格循環效果與即時操作", tips: "Length 設 1/2 或 1 bar，Roll + Scatter 組合", genre: "Hip Hop, Breaks, DJ Sets, Live Performance" },

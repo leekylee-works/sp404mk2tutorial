@@ -1,0 +1,35 @@
+{
+  "name": "sp404mk2tutorial",
+  "version": "1.0.0",
+  "description": "Roland SP-404MKII 完整互動式中文說明書",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "SP-404MKII",
+    "Roland",
+    "Sampler",
+    "Music Production",
+    "Beat Making",
+    "Interactive Guide",
+    "Tutorial"
+  ],
+  "author": "leekylee-works",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "tailwindcss": "^4.0.0"
+  }
+}
