@@ -415,6 +415,18 @@
     background-color: oklch(1 0 0);
     color: oklch(.145 0 0);
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue, Arial, Noto Sans TC, sans-serif;
+  }
 }
 
 @layer utilities {
@@ -3604,6 +3616,18 @@
   }
 }
 
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -3655,18 +3679,6 @@
 
 .animate-slideUp {
   animation: .3s ease-out slideUp;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
-  font-family: Helvetica Neue, Arial, Noto Sans TC, sans-serif;
 }
 
 @property --tw-scale-x {
