@@ -1,6 +1,6 @@
 {
   "name": "sp404mk2tutorial",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Roland SP-404MKII 完整互動式中文說明書",
   "type": "module",
   "scripts": {
